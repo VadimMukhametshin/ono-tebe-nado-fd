@@ -13,9 +13,9 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__link-list">
-          <li class="header__links-list-item no-circle">главная</li>
-          <li class="header__links-list-item underline">посмотреть лоты</li>
-          <li class="header__links-list-item underline">об аукционе</li>
+          <li class="header__links-list-item no-circle"><a class="header-list-link  no-circle" href="#">главная</a></li>
+          <li class="header__links-list-item underline"><a class="header-list-link" href="#lots">посмотреть лоты</a></li>
+          <li class="header__links-list-item underline"><a class="header-list-link" href="#about">об аукционе</a></li>
         </ul>
       </nav>
       <a class="header__logo"
@@ -44,19 +44,19 @@
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">Сделать ставку</button>
+          <button class="bet-button" type="button">Сделать ставку</button>
         </div>
       </section>
-      <section class="lots">
+      <section class="lots" id="lots">
         <h2 class="lots_heading">ЛОТЫ</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card card-type-film">
+              <article class="card card-background-size card-type-film">
                 <div class="overlay"></div>
-                <h2 class="card__title">
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
-                </h2>
+                </h3>
                 <p class="text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -67,10 +67,10 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card card-type-book">
-                <h2 class="card__title">
+              <article class="card card-background-size card-type-book">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h2>
+                </h3>
                 <p class="text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -85,11 +85,11 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card card-type-picture">
+              <article class="card card-background-size card-type-picture">
                 <div class="overlay"></div>
-                <h2 class="card__title">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </h2>
+                </h3>
                 <p class="text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -102,7 +102,7 @@
         </ul>
         <a class="lots__look-more-link">посмотреть больше</a>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="logo__column">
           <div class="about__logo">
             <img
@@ -164,7 +164,7 @@
           <a class="footer__social-link"
           ><img
           class="footer__social-icon"
-          src="/images/yt.svg"
+          src="./images/yt.svg"
           width="48"
           height="48"
           alt="social icon"
@@ -174,7 +174,7 @@
           <a class="footer__social-link"
             ><img
               class="footer__social-icon"
-              src="/images/vk.svg"
+              src="./images/vk.svg"
               width="48"
               height="48"
               alt="social icon"
@@ -184,7 +184,7 @@
           <a class="footer__social-link"
             ><img
               class="footer__social-icon"
-              src="/images/pinterest.svg"
+              src="./images/pinterest.svg"
               width="48"
               height="48"
               alt="pinterest icon"
